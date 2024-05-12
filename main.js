@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     const gltf = await loadGLTF('./assets/models/Crab_A3.gltf');
-    gltf.scene.scale.set( 0.4, 0.4, 0.4);
-    gltf.scene.position.set(0, -0.2, 0);
+    gltf.scene.scale.set( 1, 1, 1);
+    gltf.scene.position.set(0, -1, 0);
 
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(gltf.scene);
